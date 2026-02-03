@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "homepage": "https://rpsene.github.io/riscv-extensions-landscape/",
-"scripts": {
-  "build": "webpack",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist --branch gh-pages --dotfiles",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+  "scripts": {
+    "build": "node init && webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --branch gh-pages --dotfiles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
